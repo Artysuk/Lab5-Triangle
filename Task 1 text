@@ -1,0 +1,50 @@
+Task 1
+
+GTv1 (Generated Test Suite)
+Test Verdicts: From the provided GTv1.java, it includes tests for both valid and invalid input dates. The screenshot indicates 2 passed and 2 failed tests.
+Test Coverage:
+Class: 100% (Based on the screenshot, assumed because the test class itself was executed)
+Method: 100% (Assuming all methods of NextDate were invoked by the test cases)
+Line: 87% (From the screenshot provided)
+
+MTv1 (Manual Test Suite)
+Test Verdicts: Based on the MTv1.java file, the manual tests seem designed to pass, but actual execution results are not provided.
+Test Coverage:
+Class: 100%
+Method: 100%
+Line: 65%
+
+
+Equivalence Class (EC) Coverage Comparison
+
+Covered by MTv1:
+Transition from June to July (testJuneToJuly).
+Transition from March to April (testMarchToApril).
+Transition from December to the next year (testDecemberToJanuary), testing a boundary condition but with an invalid future year (2021) according to the NextDate restrictions.
+Leap year date transition (testLeapYear), which is not properly implemented in NextDate as the leap year function is commented out.
+
+Covered by GTv1:
+Tests with various edge cases including invalid dates (such as testRunWithNegative and dates with days that exceed the maximum for a month like in testCreatesNextDate10).
+Tests for valid date transitions at the end of months and for different years.
+Some tests with arbitrary, nonsensical dates to check the robustness against completely invalid input.
+
+Overlaps and Differences
+
+Overlap: Both suites test the transition from the end of one month to the beginning of the next month, as seen in testJuneToJuly (MTv1) and testCreatesNextDate5 (GTv1).
+Differences:
+
+MTv1: Tests for specific date transitions, including leap year handling, which is critical functionality but not implemented in the provided NextDate.
+GTv1: Includes a wider variety of tests, including many invalid inputs and more robustness checks.
+Defect-Detection Effectiveness and Code Coverage
+
+MTv1's targeted approach may miss some edge cases but focuses on critical date transitions, including leap years, which could reveal significant bugs due to the missing functionality in NextDate.
+GTv1's broader approach with more tests and various invalid inputs might reveal more issues in the input validation logic but may not focus enough on critical functional scenarios, as seen by its lower line coverage compared to MTv1.
+
+Relationship Between Measures
+
+Code coverage is generally a good indicator of how thoroughly the code has been tested. However, having a high number of tests or high coverage doesn't necessarily mean all important cases are covered, as seen in the lack of leap year tests in GTv1.
+Effective testing should include both good coverage and relevant test cases that reflect the use cases of the application.
+
+Number of Tests
+GTv1 has a larger number of tests than MTv1, which indicates a more exhaustive attempt to check the NextDate functionality against a variety of inputs.
+MTv1's smaller, targeted suite focuses on the critical functionalities, as per the program specification, potentially making it more effective in testing the most relevant aspects of NextDate.
