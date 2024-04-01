@@ -1,0 +1,29 @@
+GTv1 and GTv2
+
+GTv1
+Test Coverage:
+Class: 100%
+Method: 100%
+Line: 81%
+
+GTv12
+Test Coverage:
+Class: 100%
+Method: 100%
+Line: 97%
+
+Number of Tests
+GTv1: Contains 21 test methods.
+GTv12: Contains 25 test methods.
+
+Code Coverage
+GTv1: These scenarios include generating the next date for different input dates, handling invalid input gracefully, and ensuring proper error messages for out-of-range or invalid dates.
+GTv2: In the second set of tests, additional scenarios are explored, encompassing different input parameters, edge cases, and leap year considerations.
+
+Equivalence Class (EC) Coverage
+GTv1 covers invalid dates, such as negative values or impossible dates, and transitions between days and months. It does not explicitly test leap years.
+GTv2 extends the testing coverage beyond GTv1 by introducing tests for leap years, specifically addressing February 29th scenarios. It also examines various input parameters and edge cases, ensuring robust error handling for invalid next year scenarios and negative input values. Additionally, GTv2 scrutinizes different edge cases to ensure accurate generation of the next date and maintains consistency in error reporting for out-of-range dates.
+Comparative Analysis:
+Effectiveness: GTv2 is more effective in terms of testing robustness and edge cases compared to GTv1. It covers leap year scenarios and a wider range of input variations, enhancing overall test effectiveness.
+Robustness: GTv2 demonstrates greater robustness by addressing more diverse scenarios, including leap years and handling invalid inputs like negative values and out-of-range dates. This comprehensive testing approach enhances the class's resilience to unexpected inputs.
+Relevance: Both GTv1 and GTv2 are relevant in testing the functionality of the NextDate class. However, GTv2's expanded scope makes it more relevant for ensuring the class's robustness and handling of various real-world scenarios, making it a more comprehensive testing suite overall.
