@@ -1,14 +1,12 @@
 Task 1
 
 GTv1
-Test Verdicts: From the provided GTv1.java, it includes tests for both valid and invalid input dates. The screenshot indicates 2 passed and 2 failed tests.
 Test Coverage:
 Class: 100% (Based on the screenshot, assumed because the test class itself was executed)
 Method: 100% (Assuming all methods of NextDate were invoked by the test cases)
 Line: 87%
 
 MTv1
-Test Verdicts: Based on the MTv1.java file, the manual tests seem designed to pass, but actual execution results are not provided.
 Test Coverage:
 Class: 100%
 Method: 100%
