@@ -29,20 +29,19 @@ Some tests with arbitrary, nonsensical dates to check the robustness against com
 Overlaps and Differences
 
 Overlap: Both suites test the transition from the end of one month to the beginning of the next month, as seen in testJuneToJuly (MTv1) and testCreatesNextDate5 (GTv1).
+
 Differences:
-
-MTv1: Tests for specific date transitions, including leap year handling, which is critical functionality but not implemented in the provided NextDate.
+MTv1: Tests for specific date transitions, including leap year handling
 GTv1: Includes a wider variety of tests, including many invalid inputs and more robustness checks.
-Defect-Detection Effectiveness and Code Coverage
 
+Defect-Detection Effectiveness and Code Coverage
 MTv1's targeted approach may miss some edge cases but focuses on critical date transitions, including leap years, which could reveal significant bugs due to the missing functionality in NextDate.
-GTv1's broader approach with more tests and various invalid inputs might reveal more issues in the input validation logic but may not focus enough on critical functional scenarios, as seen by its lower line coverage compared to MTv1.
+GTv1's broader approach with more tests and various invalid inputs might reveal more issues in the input validation logic but may not focus enough on critical functional scenarios, compared to MTv1.
 
 Relationship Between Measures
-
-Code coverage is generally a good indicator of how thoroughly the code has been tested. However, having a high number of tests or high coverage doesn't necessarily mean all important cases are covered, as seen in the lack of leap year tests in GTv1.
-Effective testing should include both good coverage and relevant test cases that reflect the use cases of the application.
+They have kind of a needable relationships where GTv1 can check all the general test,
+but the MTv1 can check some specific cases, which is needed, of course.
 
 Number of Tests
-GTv1 has a larger number of tests than MTv1, which indicates a more exhaustive attempt to check the NextDate functionality against a variety of inputs.
-MTv1's smaller, targeted suite focuses on the critical functionalities, as per the program specification, potentially making it more effective in testing the most relevant aspects of NextDate.
+GTv1 has a larger number of tests than MTv1, but tests are rather general than specific.
+MTv1's smaller, targeted suite focuses on the critical functionalities, as per the program specification.
