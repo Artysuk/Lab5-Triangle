@@ -1,5 +1,17 @@
 GTv1 and GTv12
 
+GTv1
+Test Coverage:
+Class: 100%
+Method: 100%
+Line: 81%
+
+GTv12
+Test Coverage:
+Class: 100%
+Method: 100%
+Line: 98%
+
 Number of Tests
 GTv1: Contains 16 test methods.
 GTv12: Contains 20 test methods.
