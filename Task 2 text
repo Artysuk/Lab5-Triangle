@@ -1,4 +1,6 @@
 GTv1 and GTv12
+What is different regarding number of tests, code coverage, and
+EC coverage?
 
 GTv1
 Test Coverage:
@@ -23,8 +25,3 @@ GTv12: Similarly includes tests for valid and invalid dates, but also adds tests
 Equivalence Class (EC) Coverage
 GTv1 covers invalid dates, such as negative values or impossible dates, and transitions between days and months. It does not explicitly test leap years.
 GTv12 adds coverage for leap years (e.g., testCreatesNextDate12 checks February 28th in a leap year) and some boundary conditions (e.g., testCreatesNextDate8 for the transition from December 31st to January 1st).
-
-Comparative Analysis
-Effectiveness: GTv12 appears to be more effective due to the inclusion of leap year tests and additional boundary conditions which are important for a date calculation program.
-Robustness: Both test suites attempt to address negative and out-of-bound values, which is good for testing robustness.
-Relevance: GTv12 has tests that seem more aligned with real-world use cases, like leap years and year transitions, making it potentially better for practical scenarios.
