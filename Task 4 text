@@ -1,0 +1,9 @@
+After the first (incorrect) refactoring:
+
+GTv2 maintained its effectiveness with all tests passing successfully, indicating that the refactoring did not introduce any regression or issues in the test suite.
+MTv1, however, failed one test out of 25, suggesting that the refactoring might have introduced a regression or uncovered a previously existing issue in the code. This failure indicates that the test suite might not have covered certain edge cases or scenarios adequately.
+
+After the second (correct) refactoring:
+
+GTv1, which had previously failed one test, improved its performance with only one test failing out of four. This indicates that the correct refactoring addressed the issues uncovered in the first round and resulted in a more stable and effective test suite.
+MTv1, despite having two failed tests after the second refactoring, still showed improvement compared to the first refactoring. However, the presence of two failed tests out of 25 suggests that further investigation and refinement of the test suite may be necessary to ensure comprehensive coverage and robustness.
